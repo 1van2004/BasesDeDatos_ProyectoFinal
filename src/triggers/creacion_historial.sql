@@ -1,5 +1,5 @@
 CREATE TRIGGER tr_crear_historial
-ON caso_de_prueba
+ON casoPrueba
 AFTER INSERT, UPDATE
 AS
 BEGIN
