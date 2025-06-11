@@ -5,3 +5,11 @@ INSERT INTO usuario (nombre, primer_apellido, segundo_apellido, correo)
 VALUES (@nombre, @primer_apellido, @segundo_apellido, @correo);
 Select SCOPE_IDENTITY() AS NuevoUsuarioId;
 END;
+
+
+-----------Para utilizar SP---------------
+EXEC sp_crear_usuario 
+  @nombre = '', 
+  @primer_apellido = '',
+  @segundo_apellido = '',
+  @correo = '';

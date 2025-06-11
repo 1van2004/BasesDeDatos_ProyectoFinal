@@ -5,3 +5,10 @@ INSERT INTO CasoPrueba (nombre, descripcion, version_actual, activo)
 VALUES (@nombre, @descripcion, @version_actual, @activo);
 Select SCOPE_IDENTITY() AS NuevoCasodPruebaId;
 END;
+
+-----------Para utilizar SP---------------
+EXEC sp_crear_casoPrueba
+  @nombre = '', 
+  @descripcion = '',
+  @version_actual = 7,
+  @activo = 0;

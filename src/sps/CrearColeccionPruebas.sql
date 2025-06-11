@@ -5,3 +5,7 @@ INSERT INTO TestSuite (nombre,descripcion)
 VALUES (@nombre, @descripcion);
 END;
 
+-----------Para utilizar SP---------------
+EXEC sp_CrearTestSuite 
+  @nombre = '', 
+  @descripcion = '';

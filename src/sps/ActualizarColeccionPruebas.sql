@@ -7,3 +7,8 @@ descripcion = @nueva_descripcion
 WHERE id_suite = @id_suite;
 END;
 
+-----------Para utilizar SP
+EXEC sp_ActualizarTestSuite 
+  @id_suite = 1, 
+  @nuevo_nombre = '',
+  @nueva_descripcion = '';

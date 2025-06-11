@@ -23,3 +23,10 @@ BEGIN
   END
 END;
 GO
+
+
+-----------Para utilizar SP---------------
+EXEC sp_actualizar_caso 
+  @id_caso = 1, 
+  @nombre = '',
+  @descripcion = '';

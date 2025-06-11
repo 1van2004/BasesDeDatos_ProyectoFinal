@@ -1,5 +1,8 @@
 CREATE VIEW vista_suit_caso
 AS
 SELECT *
-FROM suit_caso;
+FROM SuiteCaso;
 GO
+
+--------Para activar en cosola---------- 
+SELECT * FROM vista_suit_caso;
