@@ -1,4 +1,4 @@
-CREATE PRODUCEDURE EnlazarCasoConSuite
+CREATE PROCEDURE EnlazarCasoConSuite
 @id_suite INT,
 @id_caso INT
 AS
@@ -13,6 +13,11 @@ VALUES (@id_suite, @id_caso);
 END
 ELSE 
 BEGIN
-PRINT 'Este caso ya está enlazado con esta suite'.;
+PRINT 'Este caso ya está enlazado con esta suite';
 END
 END;
+
+-----------Para utilizar SP---------------
+EXEC EnlazarCasoConSuite
+  @id_suite = 1, 
+  @id_caso = 1;
